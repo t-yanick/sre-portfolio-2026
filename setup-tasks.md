@@ -1,0 +1,1 @@
+- Migrate from PAT to SSH keys for GitHub authentication (better security, no plaintext storage)
