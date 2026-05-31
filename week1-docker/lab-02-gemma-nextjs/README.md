@@ -11,6 +11,8 @@ Containerized my deployed Gemma 4 immigration assistant (live at gemma-canada-as
 
 **80% reduction. 5x smaller.**
 
+Compressed image on Docker Hub: 64.6 MB — what a user downloads when running `docker pull`.
+
 ## Why standalone mode wins
 
 `npm ci --omit=dev` produced a 493 MB `node_modules` because Next.js packaging treats several runtime helpers as devDependencies. Standalone mode uses Next.js's tracer to identify what the compiled app *actually* needs at runtime — typically ~10 directories, ~18 MB — and bundles only that.
