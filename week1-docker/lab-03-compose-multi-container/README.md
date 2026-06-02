@@ -51,3 +51,11 @@ curl http://localhost:3000  # total_visits resets to 1
 - `app/Dockerfile` — Node.js API container build
 - `app/server.js` — minimal Express API with Postgres connection
 - `app/package.json` — dependencies
+
+## Image on Docker Hub
+
+The API container is published to Docker Hub:
+
+`docker pull tyanick237/lab-03-api:1.0`
+
+This means `docker compose up` works without `--build` if you only want to run the stack (no local source needed). To rebuild from source, use `docker compose up --build`.

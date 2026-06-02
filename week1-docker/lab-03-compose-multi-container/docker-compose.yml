@@ -1,6 +1,7 @@
 services:
 
   api:
+    image: tyanick237/lab-03-api:1.0
     build: ./app
     ports:
       - "3000:3000"
