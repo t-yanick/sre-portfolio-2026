@@ -68,3 +68,8 @@ Not a dedicated course in this plan. Covered via:
 - **Pass at 720/1000 minimum**
 - **Aim for 800+** for confidence and to leave margin
 - Exam fee budgeted: $150 USD
+
+## Bonus exposure
+- **June 29, 2026:** AWS-hosted "Fundamentals of Amazon EKS" workshop registered
+  Early Kubernetes-on-AWS exposure ahead of CKA prep in Weeks 12-17. Not core SAA-C03 material but supports the longer-term SRE pivot.
+
