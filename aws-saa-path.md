@@ -91,3 +91,23 @@ Not a dedicated course in this plan. Covered via:
 
 ### Next session
 - Lab 08 (own portfolio): cross-account role + Organizations/SCP simulation OR cost-discipline tooling
+
+## Scaling, Availability, and DNS — Module 1 (ELB) Complete
+
+**Date:** June 25, 2026
+**Quiz score:** 10/10 (first perfect score)
+**Course completion:** 21% (Module 1 of 5)
+
+### Concepts that landed clearly
+- Three load balancer types (ALB Layer 7, NLB Layer 4 extreme performance, CLB legacy)
+- Sticky sessions and when they're appropriate (stateful apps) vs anti-pattern (stateless)
+- Layer 7 vs Layer 4 distinction and which traffic patterns each suits
+
+### Concepts to reinforce
+- Deregistration delay as "graceful drain" pattern (300s default, max 3600s)
+
+### Next session (Friday)
+- Module 2: Monitoring (CloudWatch deeper) — 56m
+- Module 3: High Availability and Scaling — 1h 45m (exam-critical Auto Scaling material)
+- Lab 09 (own portfolio): Auto Scaling Group + ALB from scratch
+
