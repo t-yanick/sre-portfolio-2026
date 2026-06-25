@@ -73,3 +73,21 @@ Not a dedicated course in this plan. Covered via:
 - **June 29, 2026:** AWS-hosted "Fundamentals of Amazon EKS" workshop registered
   Early Kubernetes-on-AWS exposure ahead of CKA prep in Weeks 12-17. Not core SAA-C03 material but supports the longer-term SRE pivot.
 
+
+## Module 2 (Governance) — Complete
+
+**Date:** June 22, 2026
+**Quiz score:** 8/10
+**Pluralsight guided lab:** Tags and Resource Groups — completed
+
+### Concepts that landed clearly
+- AWS Organizations multi-account hierarchy with OUs and SCPs
+- AWS Config for configuration state tracking (vs CloudTrail for API call audit)
+- Cost optimization stack: Cost Explorer (view) → Budgets (alert) → Cost & Usage Reports (export) → Savings Plans (commit) → Compute Optimizer (right-size)
+
+### Concepts to reinforce
+- Cross-account roles via sts:AssumeRole — same mechanic as Lab 02, applied across two accounts
+- Trusted Advisor — AWS-provided best-practice scanner across 5 categories (cost, performance, security, fault tolerance, service limits)
+
+### Next session
+- Lab 08 (own portfolio): cross-account role + Organizations/SCP simulation OR cost-discipline tooling
