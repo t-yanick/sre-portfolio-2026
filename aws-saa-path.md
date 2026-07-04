@@ -111,3 +111,40 @@ Not a dedicated course in this plan. Covered via:
 - Module 3: High Availability and Scaling — 1h 45m (exam-critical Auto Scaling material)
 - Lab 09 (own portfolio): Auto Scaling Group + ALB from scratch
 
+
+## Scaling, Availability, and DNS Course — COMPLETE
+
+**Date:** July 4, 2026
+**Course completion:** 100%
+
+### Quiz scores
+- Module 1 ELB: 10/10 (perfect)
+- Module 2 Monitoring: 9/10
+- Module 3 HA + Scaling: 8/10
+- Module 4 Route 53: 10/10 (perfect)
+- Module 5 Caching: 7/8
+
+**Cumulative running average across all 11 quizzes taken: ~8.7/10**
+
+### Domain 2 (Resilient Architectures, 26% of exam)
+
+Substantively covered by:
+- Lab 09 (ASG + ALB from scratch with self-healing demo) — hands-on portfolio piece
+- Modules 1-3 (ELB, Monitoring, HA + Scaling) — full theoretical coverage
+- Route 53 (Module 4) — theoretical coverage via 10/10 quiz
+
+### Domain 3 partial (High-Performing Architectures, 24% of exam)
+
+Partially covered:
+- Module 5 (Caching) — CloudFront, ElastiCache, DAX, Global Accelerator
+- Remaining: Storage, Databases, ML, Big Data course (next course)
+
+### Total courses complete: 4 of 5
+1. Certification Essentials ✅
+2. Fundamental Services ✅
+3. Security and Governance ✅
+4. Scaling, Availability, and DNS ✅
+5. Storage, Databases, ML, and Big Data Analytics — pending
+
+### Next session
+Storage/Databases/ML/BigData course — Domain 3 finish + Domain 4 (Cost) content
