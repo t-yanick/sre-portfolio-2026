@@ -148,3 +148,20 @@ Partially covered:
 
 ### Next session
 Storage/Databases/ML/BigData course — Domain 3 finish + Domain 4 (Cost) content
+
+## Real-World FinOps Diagnostic — August 5, 2026
+
+**Signal:** Unexpected AWS bill of $9.10 CAD (~$6.38 USD) for July 2026, above the expected near-zero baseline for lab-only work.
+
+**Diagnostic process:**
+1. Reviewed Billing dashboard service-level breakdown: EC2 $5.00, ELB $0.29, VPC $0.27
+2. Ran CLI audit across EIPs, EBS volumes, EBS snapshots, EC2 instances (any state), NAT Gateways, VPC endpoints
+3. Found stopped c7i.2xlarge instance from a discontinued project (Alignerr CFD trial, July 17) with attached 100GB gp3 EBS volume still billing at ~$8/month
+
+**Root cause:** "Stopped" EC2 instances continue to bill for their attached EBS volume storage. Compute charges stop; storage charges do not. Common surprise-cost pattern in production AWS accounts.
+
+**Fix:** Verified `DeleteOnTermination: True` on the root volume, then terminated instance. Volume auto-deleted. Confirmed clean state via `describe-volumes` returning `InvalidVolume.NotFound`.
+
+**Prevented:** ~$40-50 USD of ongoing charges over the remaining SRE pivot timeline.
+
+**Lesson locked in:** Stopping an EC2 instance is not free. If keeping the data is not needed, terminate. If keeping the data is needed but not the runtime, snapshot the volume (~$0.05/GB/month) and terminate — cheaper than leaving a stopped instance.
